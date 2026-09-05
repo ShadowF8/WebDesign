@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    background-color: lightslategray;
+    
+}
+
+hr {
+    border: none;
+    border-top: 3px solid darkred;
+    margin: 20px 0;
+}
+
+img {
+    width: 300px;
+    
+}
