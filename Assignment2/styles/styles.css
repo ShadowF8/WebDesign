@@ -4,6 +4,14 @@ body {
     
 }
 
+header{
+    border: 2px solid black;
+    padding: 35px;
+    text-align: center;
+    background-color: rgb(227, 211, 225);
+
+}
+
 hr {
     border: none;
     border-top: 6px solid rgb(63, 29, 29);
