@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background: linear-gradient(to bottom, #93bfc4, #c1adc5);
+    background: linear-gradient(to bottom, #a5ccc3, #c1adc5);
     
 }
 
@@ -8,9 +8,65 @@ header{
     border: 2px solid black;
     padding: 35px;
     text-align: center;
-    background-color: rgb(182, 145, 170);
+    background: linear-gradient(to bottom, rgb(193, 181, 208), rgb(138, 146, 204));
 
 }
+
+.spinning-symbol {
+    text-align: center;
+    font-size: 40px;
+    margin: 15px;
+    animation: spin 8s linear infinite;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0def);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+li {
+    list-style-type:none;
+    color:rgb(79, 2, 48);
+    display: inline-block;
+    font-family: Georgia, serif;
+}
+
+nav {
+    text-align: center;
+    font-family: Garamond, Georgia, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #311618;
+    text-decoration: none;
+    border: 3px solid #311618;
+    padding: 6px 12px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: rgb(193, 181, 208);
+}
+
+
 
 hr {
     border: none;
@@ -59,7 +115,9 @@ h2 {
     border: 3.5px solid #152d30;
     padding: 8px;
     margin-top: 0;
+    background: linear-gradient(to bottom, #59636b, #9b909f);
 }
+
 
 .animal img {
     width: 100%;
