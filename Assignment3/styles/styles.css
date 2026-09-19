@@ -14,8 +14,8 @@ header{
 
 .hero {
     padding: 2%;
-
 }
+
 
 .hero blockquote {
     text-align: center;
@@ -46,8 +46,8 @@ header{
     height: 555px;
     object-fit: cover;
 
-}
-
+    
+}   
 .spinning-symbol {
     text-align: center;
     font-size: 40px;
