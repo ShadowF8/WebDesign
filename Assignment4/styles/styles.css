@@ -242,3 +242,65 @@ th {
     margin: 10px auto;
     font-family: Garamond, Georgia, serif;
 }
+
+.form-v2 {
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: Garamond, Georgia, serif;
+}
+
+.form-v2 fieldset {
+    border: 3px solid #381b2e;
+    padding: 25px;
+    background: rgba(193, 181, 208, 0.45);
+}
+
+.form-v2 legend {
+    padding: 8px 15px;
+    border: 3px solid #152d30;
+    background: linear-gradient(to bottom, #59636b, #9b909f);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-v2 label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #311618;
+}
+
+.form-v2 input[type="text"],
+.form-v2 input[type="email"],
+.form-v2 select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #381b2e;
+    background-color: #eee8ef;
+    font-family: Garamond, Georgia, serif;
+    font-size: 1rem;
+}
+
+.form-v2 input[type="radio"],
+.form-v2 input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.form-v2 button {
+    display: block;
+    margin: 25px auto 5px;
+    padding: 10px 25px;
+    border: 3px solid #381b2e;
+    background-color: #9b909f;
+    color: #311618;
+    font-family: Garamond, Georgia, serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.form-v2 button:hover {
+    background-color: #c1adc5;
+}
