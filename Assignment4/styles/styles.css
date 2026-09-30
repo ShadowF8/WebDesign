@@ -130,7 +130,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 30px, auto;
 }
 
 .animal {
@@ -164,37 +164,47 @@ font-family: Garamond, Georgia, serif;
 }
 
 .intro {
-    max-width: 800px;
+    max-width: 600px;
     margin: 40px auto;
     padding: 25px;
     text-align: center;
-
+    font-family: Garamond, Georgia, serif;
+    border: 3px solid #381b2e;
+    background: rgba(193, 181, 208, 0.45);
 }
 
 .intro h2 {
-    margin-bottom: 15px;
-
+    padding: 8px 15px;
+    border: 3px solid #152d30;
+    background: linear-gradient(to bottom, #59636b, #9b909f);
+    margin-top: 0;
+    font-style: italic;
 }
 
 .intro p {
-    font-family: Garamond, Georgia, serif;
     line-height: 1.6;
-
+    color: #311618;
 }
 
 table {
     border-collapse: collapse;
-    margin: 30px auto;
+    margin: 40px auto;
     width: 80%;
+    max-width: 800px;
+    font-family: Garamond, Georgia, serif;
+    background: rgba(193, 181, 208, 0.45);
 }
 
 th, td {
-    border: 2px solid #381b2e;
-    padding: 10px;
+    border: 3px solid #381b2e;
+    padding: 12px;
+    color: #311618;
 }
 
 th {
-    background-color: #9b909f;
+    background: linear-gradient(to bottom, #59636b, #9b909f);
+    color: #311618;
+    font-size: 1.1rem;
 }
 
 #gallery {
@@ -202,7 +212,7 @@ th {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 30px auto;
     row-gap: 10px;
     column-gap: 10px;
     position: relative;
