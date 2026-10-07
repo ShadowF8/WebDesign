@@ -1,1 +1,5 @@
-#<h1> I Think that I need to organize my files alot better or pay attention to the order, But I am getting better at it. I think that everything is cleat, I just have a hard time reading and have to re read a fw times for myslemy. Thank you! </h2>
+Webpage the component will be applied to:into the about page.
+Type of component: I am thinking a featured section with image content, some sort of media. 
+Why it's needed: to highlight either a new animal that was submitted as a favorite animal. 
+Features: i.e., the component requires a heading, paragraph, list, button, and image
+What you'll use to build it: most likely Grid

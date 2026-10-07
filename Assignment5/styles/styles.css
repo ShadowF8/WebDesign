@@ -1,0 +1,316 @@
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #a5ccc3, #c1adc5);
+    
+}
+
+header{
+    border: 2px solid black;
+    padding: 35px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(193, 181, 208), rgb(138, 146, 204));
+
+}
+
+.hero {
+    padding: 2%;
+}
+
+
+.hero blockquote {
+    text-align: center;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    background-color: rgb(147, 122, 149);
+    color: #9b909f;
+    padding-top: 3%;
+
+}
+
+.hero cite {
+    display: block;
+    text-align: center;
+    color:rgb(147, 122, 149) ;
+    background-color: #9b909f;
+    padding-top: 1%;
+    padding-bottom: 3%;
+
+}
+
+.hero img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    height: 555px;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+
+}   
+
+.spinning-symbol {
+    text-align: center;
+    font-size: 40px;
+    margin: 15px;
+    animation: spin 8s linear infinite;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+li {
+    list-style-type:none;
+    color:rgb(79, 2, 48);
+    display: inline-block;
+    font-family: Georgia, serif;
+}
+
+nav {
+    text-align: center;
+    font-family: Garamond, Georgia, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #311618;
+    text-decoration: none;
+    border: 3px solid #311618;
+    padding: 6px 12px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: rgb(193, 181, 208);
+}
+
+ 
+h1 {
+    font-family: Garamond, Georgia, serif;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-inset: 12px;
+    text-decoration-color: rgb(59, 17, 17);
+
+
+}
+
+h2 {
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 30px, auto;
+}
+
+.animal {
+    text-align: center;
+    border: 4px solid;
+    padding: 20px;
+
+}
+
+.animal h3 {
+    font-family: Garamond, georgia, serif;
+    border: 3.5px solid #152d30;
+    padding: 8px;
+    margin-top: 0;
+    background: linear-gradient(to bottom, #59636b, #9b909f);
+}
+
+
+.animal img {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 10px;
+    border: 4px solid #381b2e;
+}
+
+.animal p {
+    max-width: 280px;
+    margin: 10px auto;
+font-family: Garamond, Georgia, serif;
+
+}
+
+.intro {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    text-align: center;
+    font-family: Garamond, Georgia, serif;
+    border: 3px solid #381b2e;
+    background: rgba(193, 181, 208, 0.45);
+}
+
+.intro h2 {
+    padding: 8px 15px;
+    border: 3px solid #152d30;
+    background: linear-gradient(to bottom, #59636b, #9b909f);
+    margin-top: 0;
+    font-style: italic;
+}
+
+.intro p {
+    line-height: 1.6;
+    color: #311618;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 800px;
+    font-family: Garamond, Georgia, serif;
+    background: rgba(193, 181, 208, 0.45);
+}
+
+th, td {
+    border: 3px solid #381b2e;
+    padding: 12px;
+    color: #311618;
+}
+
+th {
+    background: linear-gradient(to bottom, #59636b, #9b909f);
+    color: #311618;
+    font-size: 1.1rem;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 30px auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    position: relative;
+    top: 30px;
+}
+
+#gallery img {
+    width: calc(33.333% - 10px);
+    height: auto;
+}
+
+.card-test {
+    text-align: center;
+    border: 4px solid;
+    padding: 20px;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.card-test h3 {
+    font-family: Garamond, Georgia, serif;
+    border: 3.5px solid #152d30;
+    padding: 8px;
+    margin-top: 0;
+    background: linear-gradient(to bottom, #59636b, #9b909f);
+}
+
+.card-test img {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 10px;
+    border: 4px solid #381b2e;
+}
+
+.card-test p {
+    max-width: 280px;
+    margin: 10px auto;
+    font-family: Garamond, Georgia, serif;
+}
+
+.form-v2 {
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: Garamond, Georgia, serif;
+}
+
+.form-v2 fieldset {
+    border: 3px solid #381b2e;
+    padding: 25px;
+    background: rgba(193, 181, 208, 0.45);
+}
+
+.form-v2 legend {
+    padding: 8px 15px;
+    border: 3px solid #152d30;
+    background: linear-gradient(to bottom, #59636b, #9b909f);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-v2 label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #311618;
+}
+
+.form-v2 input[type="text"],
+.form-v2 input[type="email"],
+.form-v2 select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #381b2e;
+    background-color: #eee8ef;
+    font-family: Garamond, Georgia, serif;
+    font-size: 1rem;
+}
+
+.form-v2 input[type="radio"],
+.form-v2 input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.form-v2 button {
+    display: block;
+    margin: 25px auto 5px;
+    padding: 10px 25px;
+    border: 3px solid #381b2e;
+    background-color: #9b909f;
+    color: #311618;
+    font-family: Garamond, Georgia, serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.form-v2 button:hover {
+    background-color: #c1adc5;
+}
