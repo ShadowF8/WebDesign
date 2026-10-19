@@ -93,7 +93,7 @@ backdrop-filter: blur(12px);
 color: #311618;
 font-family: Garamond, Georgia, serif;
 font-size: 1.5rem;
-font-style: italic;
+font-style: normal;
 text-align: center;
 
 }
@@ -115,6 +115,8 @@ text-align: center;
 
     color: #311618;
     font-family: Garamond, Georgia, serif;
+    font-size: 2rem;
+    font-style: normal;
     font-weight: normal;
     text-align: center;
 }
@@ -287,7 +289,7 @@ h2 {
     text-align: left;
     margin-left: 0;
     font-family: "Georgia", serif;
-    font-style: italic;
+    font-style: normal;
     font-weight: normal;
 }
 
@@ -543,4 +545,21 @@ th {
     height: auto;
     display: block;
     margin: 20px auto;
+}
+
+.yellow-flowers img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.animal {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-margin-top: 30px;
+}
+
+.animal:target {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(180, 146, 159, 0.9);
 }
