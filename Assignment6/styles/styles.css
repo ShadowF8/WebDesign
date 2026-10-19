@@ -24,11 +24,50 @@ body {
     border: none;
 }
 
+.page-title {
+    display: table;
+    width: fit-content;
+    max-width: 90%;
+    box-sizing: border-box;
+
+    background: linear-gradient(to right,
+        rgba(193, 181, 208, 0.50) 0%,
+        rgba(138, 146, 204, 0.30) 45%,
+        rgba(138, 146, 204, 0.22) 60%,
+        rgba(138, 146, 204, 0.10) 80%,
+        rgba(138, 146, 204, 0.0) 100%
+    );
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.35),
+        0 8px 25px rgba(0, 0, 0, 0.05);
+
+    border: none;
+    text-align: left;
+    margin: 20px 0;
+    padding: 25px;
+}
+
+.page-title h1 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.page-title p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
 header{
-    border: 2px solid black;
+    border: none;
     padding: 35px;
-    text-align: center;
-    background: linear-gradient(to bottom, rgb(193, 181, 208), rgb(138, 146, 204));
+    text-align: left;
+    background: transparent;
 
 }
 
@@ -38,12 +77,14 @@ header{
 
 .quote {
 max-width: 650px;
-margin: 35px auto 0;
+margin: o auto;
+margin-top: 30px;
+margin-bottom: 0;
 padding: 25px 20px 10px;
 
 background: linear-gradient(to bottom,
-    rgba(193, 181, 208, 0.30),
-    rgba(138, 146, 204, 0.30)
+    rgba(193, 181, 208, 0.10),
+    rgba(138, 146, 204, 0.70)
 );
 
 backdrop-filter: blur(12px);
@@ -59,11 +100,13 @@ text-align: center;
 
 .quote-heading {
     max-width: 650px;
-    margin: 35px auto;
-    padding: 20px;
+    margin: 50px auto 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 50px;
 
     background: linear-gradient(to bottom,
-        rgba(193, 181, 208, 0.30),
+        rgba(193, 181, 208, 0.01),
         rgba(138, 146, 204, 0.30)
     );
 
@@ -75,6 +118,27 @@ text-align: center;
     font-weight: normal;
     text-align: center;
 }
+
+.quote-author {
+display: block;
+max-width: 650px;
+margin: 0 auto;
+margin-top: 0;
+padding: 5px 20px 20px;
+
+background: linear-gradient(to bottom,
+    rgba(138, 146, 204, 0.25),
+    rgba(193, 181, 208, 0.75)
+);
+
+color: #311618;
+font-family: Garamond, Georgia, serif;
+font-size: 1.5rem;
+font-style: normal;
+text-align: center;
+
+}
+
 
 .about-intro {
     padding: 10px 20px;
@@ -92,7 +156,7 @@ text-align: center;
     width: 100%;
     height: 555px;
     object-fit: cover;
-    object-position: center;
+    object-position: left;
     opacity: 0.8;
 
 }   
@@ -100,7 +164,9 @@ text-align: center;
 .spinning-symbol {
     text-align: center;
     font-size: 40px;
-    margin: 15px;
+    margin-top: 50px ;
+    position: relative;
+    z-index: 1;
     animation: spin 8s linear infinite;
 
 }
@@ -123,8 +189,10 @@ li {
 }
 
 nav {
-    text-align: center;
+    text-align: right;
     font-family: Garamond, Georgia, serif;
+    margin-top: 40px;
+    margin-right: 40px;
 }
 
 nav ul {
@@ -140,23 +208,71 @@ nav li {
 }
 
 nav a {
-    color: #221c23;
+    color: #171218;
     text-decoration: none;
     border: 3px solid #000000;
     padding: 6px 12px;
     font-size: 1.5rem;
-    background-color: rgba(65, 82, 97, 0.55);
+    background-color: rgba(111, 135, 143, 0.75);
 }
 
 nav a:hover {
     background-color: rgb(150, 138, 165);
 }
 
+.top-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 10;
+
+}
+
+.top-navigation nav {
+    margin: 0;
+
+}
+
+.top-navigation nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.icon-navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 10px;
+    justify-content: center;
+    margin: 80px auto 60px;
+    padding: 0;
+
+}
+
+.icon-button img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+
+    margin-top: 10px;
+    margin-right: 10px;
+
+    transition: transform 0.3s ease;
+
+}
+
+.icon-button:hover img {
+    transform: scale(1.1);
+}
  
 h1 {
     font-family: Garamond, Georgia, serif;
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
     letter-spacing: 2px;
     text-decoration: underline;
     text-decoration-thickness: 4px;
@@ -166,8 +282,10 @@ h1 {
 
 }
 
+
 h2 {
-    text-align: center;
+    text-align: left;
+    margin-left: 0;
     font-family: "Georgia", serif;
     font-style: italic;
     font-weight: normal;
@@ -216,61 +334,26 @@ h2 {
 .animal p {
     max-width: 280px;
     margin: 10px auto;
-font-family: Garamond, Georgia, serif;
+    font-family: Garamond, Georgia, serif;
 
 }
 
-.quote {
-max-width: 650px;
-margin: 35px auto 0;
-padding: 25px 20px 10px;
 
-background: linear-gradient(to bottom,
-    rgba(193, 181, 208, 0.30),
-    rgba(138, 146, 204, 0.30)
-);
 
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
 
-color: #311618;
-font-family: Garamond, Georgia, serif;
-font-size: 1.5rem;
-font-style: italic;
-text-align: center;
-
-}
-
-.quote-author {
-display: block;
-max-width: 650px;
-margin: 0 auto;
-padding: 5px 20px 20px;
-
-background: linear-gradient(to bottom,
-    rgba(138, 146, 204, 0.30),
-    rgba(193, 181, 208, 0.30)
-);
-
-color: #311618;
-font-family: Garamond, Georgia, serif;
-font-size: 1.5rem;
-font-style: normal;
-text-align: center;
-
-}
 
 .intro {
     max-width: 600px;
-    margin: 40px auto;
+    margin: 30px 0;
     padding: 25px;
-    text-align: center;
+    text-align: left;
     font-family: Garamond, Georgia, serif;
+    font-size: 1.2rem;
     border: none;
 
     background: linear-gradient(to bottom,
-        rgba(193, 181, 208, 0.30),
-        rgba(138, 146, 204, 0.30)
+        rgba(193, 181, 208, 0.15),
+        rgba(138, 146, 204, 0.45)
     );
 
     backdrop-filter: blur(12px);
@@ -285,7 +368,7 @@ text-align: center;
 
 table {
     border-collapse: collapse;
-    margin: 40px auto;
+    margin-left: 0;
     width: 80%;
     max-width: 800px;
     font-family: Garamond, Georgia, serif;
@@ -410,4 +493,54 @@ th {
 
 .form-v2 button:hover {
     background-color: #c1adc5;
+}
+
+
+
+/* Keep the animal cards centered */
+.animal-card {
+    text-align: center;
+}
+
+.homepage-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.intro {
+    flex: 1;
+    min-width: 0;
+}
+
+.homepage-art {
+    flex: 0 1 40%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.homepage-art img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.artist-credit {
+    margin-top: 10px;
+    font-family: Garamond, Georgia, serif;
+    font-size: 1.5rem;
+    color: #b4929f;
+    text-align: center;
+}
+
+.site-logo {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
