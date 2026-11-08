@@ -95,8 +95,8 @@ footer {
 /* COLOR PALETTE */
 
 :root {
-    --cream: #F6F0E5;
-    --sage: #A9B8A1;
+    --cream: #ffe7c2;
+    --sage: #add89b;
     --terracotta: #C9826C;
     --rose: #DCC2B8;
     --ochre: #DCC995;
@@ -198,23 +198,41 @@ section {
     margin-bottom: 45px;
 }
 
+/* HERO IMAGE */
 
+.hero-image {
+    background-image: url("../images/WayFinder_Logo2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 400px;
+    width: 100%;
+    border-radius: 25px;
+
+}
 /* PAGE INTRO */
 
 .page-intro {
     text-align: center;
-    padding: 35px 20px;
+    padding: 45px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-intro h1 {
+    font-siz: 3rem;
+
 }
 
 .page-intro p {
     max-width: 650px;
-    margin: 0 auto;
+    margin: 0 aoto 25px;
 }
 
 
 /* BUTTONS */
 
-button,
 .button {
     display: inline-block;
     background-color: var(--terracotta);
