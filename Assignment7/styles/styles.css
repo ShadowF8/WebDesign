@@ -257,7 +257,7 @@ button:hover,
 /* FOOTER */
 
 footer {
-    background-color: var(--sage);
+    background-color: var(--olive);
     text-align: center;
     padding: 35px 20px;
 }
@@ -269,7 +269,7 @@ footer img {
 }
 
 footer a {
-    color: var(--olive);
+    color: var(--cream);
     text-decoration: none;
     margin: 8px;
 }
@@ -303,4 +303,12 @@ a {
         padding: 15px;
     }
 
+}
+
+/* COPYRIGHT */
+
+.copyright {
+    color: #ffe7c2;
+    font-size: 0.85rem;
+    margin-top: 20px;
 }
