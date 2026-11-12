@@ -64,6 +64,136 @@ textarea {
     min-height: 100px;
 }
 
+/* WAYFINDER RESOURCE FORM */
+
+.resource-form {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+
+    background-color: #F6F0E5;
+    border: 2px solid #45483D;
+    border-radius: 25px;
+
+    box-shadow: none;
+}
+
+.resource-form fieldset {
+    border: none;
+    border-bottom: 1px solid #DCC2B8;
+    padding: 25px 10px;
+    margin-bottom: 20px;
+}
+
+.resource-form legend {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #45483D;
+    padding-bottom: 10px;
+}
+
+.form-description {
+    color: #77796D;
+    font-size: 0.9rem;
+}
+
+/* CHECKBOX GRID */
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px;
+    background-color: #F6F0E5;
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.checkbox-grid label:hover {
+    background-color: #DCC2B8;
+}
+
+.checkbox-grid input {
+    accent-color: #45483D;
+    width: 17px;
+    height: 17px;
+}
+
+/* TEXT INPUTS */
+
+.resource-form > fieldset > label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.resource-form input[type="text"],
+.resource-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px;
+    border: 1px solid #DCC2B8;
+    border-radius: 12px;
+
+    background-color: #F6F0E5;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.resource-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* FORM BUTTON */
+
+.form-button {
+    display: block;
+    margin: 30px auto 10px;
+
+    background-color: #45483D;
+    color: #F6F0E5;
+
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #C9826C;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .resource-form {
+        padding: 15px;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* BUTTONS */
 
 button {
@@ -281,34 +411,171 @@ a {
     color: var(--olive);
 }
 
-
-/* MOBILE ADJUSTMENTS */
-
-@media (max-width: 600px) {
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    nav {
-        gap: 8px;
-    }
-
-    nav a {
-        padding: 9px 15px;
-        font-size: 0.9rem;
-    }
-
-    main {
-        padding: 15px;
-    }
-
-}
-
 /* COPYRIGHT */
 
 .copyright {
     color: #ffe7c2;
     font-size: 0.85rem;
     margin-top: 20px;
+}
+
+
+
+/* RESOURCE ICONS */
+
+.resource-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.resource-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #45483D;
+
+    background-color: #ffe7c2;
+    border-radius: 20px;
+
+    transition: 0.3s ease;
+}
+
+.resource-icon img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.resource-icon span {
+    font-weight: 600;
+}
+
+.resource-icon:hover {
+    background-color: #DCC2B8;
+    transform: translateY(-5px);
+}
+
+
+/* RESOURCE MAP */
+
+.map-section {
+    margin: 40px 0;
+}
+
+.map-section h2 {
+    text-align: center;
+}
+
+/* MAP AND RESOURCE LIST */
+
+.map-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* MAP */
+
+#map {
+    height: 550px;
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid #A9B8A1;
+    z-index: 1;
+}
+
+/* RESOURCE LIST */
+
+.resource-list {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 20px;
+    border: 3px solid #A9B8A1;
+}
+
+.resource-list h3 {
+    margin-top: 0;
+}
+
+/* RESOURCE CARDS */
+
+.resource-card {
+    background-color: #F6F0E5;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border-left: 5px solid #A9B8A1;
+}
+
+.resource-card h4 {
+    color: #45483D;
+    margin-top: 0;
+}
+
+.resource-card p {
+    font-size: 0.9rem;
+}
+
+
+/* FEATURED ORGANIZATIONS */
+
+.featured-organizations {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.featured-organizations > p {
+    margin-bottom: 35px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.featured-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+
+    border-top: 6px solid #A9B8A1;
+
+    box-shadow: 0 8px 20px rgba(69, 72, 61, 0.08);
+}
+
+.featured-card h3 {
+    color: #45483D;
+}
+
+.featured-card a {
+    display: inline-block;
+    margin-top: 15px;
+
+    background-color: #45483D;
+    color: #F6F0E5;
+
+    padding: 10px 20px;
+    border-radius: 50px;
+
+    text-decoration: none;
+}
+
+.featured-card a:hover {
+    background-color: #C9826C;
 }

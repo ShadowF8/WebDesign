@@ -49,66 +49,53 @@
             </p>
         </section>
 
-        <form>
+        <form action="resource-map.html" method="get" class="resource-form">
 
-            <fieldset>
-                <legend>1. What kind of support are you looking for?</legend>
+    <fieldset>
+        <legend>01 — What are you looking for?</legend>
+        <p class="form-description">Select all that apply.</p>
 
-                <label>
-                    <input type="checkbox" name="support" value="housing">
-                    Housing and Shelter
-                </label>
+        <div class="checkbox-grid">
+            <label><input type="checkbox" name="support" value="housing"> Housing & Shelter</label>
+            <label><input type="checkbox" name="support" value="food"> Food & Basic Needs</label>
+            <label><input type="checkbox" name="support" value="healthcare"> Healthcare & Wellness</label>
+            <label><input type="checkbox" name="support" value="employment"> Employment & Education</label>
+            <label><input type="checkbox" name="support" value="family"> Family & Childcare</label>
+            <label><input type="checkbox" name="support" value="transportation"> Transportation</label>
+            <label><input type="checkbox" name="support" value="other"> Other Support</label>
+        </div>
+    </fieldset>
 
-                <label>
-                    <input type="checkbox" name="support" value="food">
-                    Food & Basic Needs
-                </label>
+    <fieldset>
+        <legend>02 — Where are you looking?</legend>
 
-                <label>
-                    <input type="checkbox" name="support" value="healthcare">
-                    Healthcare 
-                </label>
+        <label for="location">City or community</label>
+        <input type="text" id="location" name="location"
+               placeholder="Enter a city or community">
+    </fieldset>
 
-                <label>
-                    <input type="checkbox" name="support" value="employment">
-                    Employment & Education
-                </label>
+    <fieldset>
+        <legend>03 — How would you prefer to connect?</legend>
 
-                <label>
-                    <input type="checkbox" name="support" value="family">
-                    Family and Childcare
-                </label>
+        <div class="checkbox-grid">
+            <label><input type="checkbox" name="contact" value="in-person"> In person</label>
+            <label><input type="checkbox" name="contact" value="phone"> By phone</label>
+            <label><input type="checkbox" name="contact" value="online"> Online</label>
+            <label><input type="checkbox" name="contact" value="any"> Any option</label>
+        </div>
+    </fieldset>
 
-                <label>
-                    <input type="checkbox" name="support" value="transportation">
-                    Transportation
-                </label>
+    <fieldset>
+        <legend>04 — Anything else?</legend>
 
-                <label>
-                    <input type="checkbox" name="support" value="other">
-                    Other Support
-                </label>
-            </fieldset>
+        <label for="details">Additional information (optional)</label>
+        <textarea id="details" name="details"
+                  placeholder="Share anything else that may help..."></textarea>
+    </fieldset>
 
-            <fieldset>
-                <legend>2. What area are you looking for resources in?</legend>
+    <button type="submit" class="form-button">Explore Resources</button>
 
-                <label for="location">City or community:</label>
-                <input type="text" id="location" name="location"
-                    placeholder="Enter your location">
-            </fieldset>
-
-            <fieldset>
-                <legend>3. Is there anything else we should know?</legend>
-
-                <label for="details">Additional information (optional):</label>
-                <textarea id="details" name="details"
-                    placeholder="Tell us a little more about what you need."></textarea>
-            </fieldset>
-
-            <button type="submit">Find Resources</button>
-
-        </form>
+</form>
 
         <p>You can also browse all available resources without completing this form.</p>
         <a href="resource-map.html">Browse All Resources</a>

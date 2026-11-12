@@ -1,31 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Resource Map | WayFinder</title>
+
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 
 <body>
 
-
 <header>
 
-    <!-- SITE BRANDING -->
     <div class="site-branding">
-
         <a href="index.html">
-            <img src="images/WayFinder_Logo.png"
-                 alt="Wayfinder logo">
+            <img src="images/WayFinder_Logo.png" alt="Wayfinder logo">
         </a>
-
         <p>Community Resources & Connections</p>
-
     </div>
 
-    <!-- MAIN NAVIGATION -->
     <nav>
         <a href="index.html">Home</a>
         <a href="find-resources.html">Find Resources</a>
@@ -35,71 +35,96 @@
 
 </header>
 
-    <main>
+<main>
 
-        <section class="hero-image">
+    <section class="hero-image"></section>
+
+    <section class="page-intro">
+        <h1>Explore Local Resources</h1>
+        <p>Find community support in Missoula and surrounding areas.</p>
+    </section>
+
+    <section class="map-section">
+
+        <h2>Community Resource Map</h2>
+
+        <p>Click a map pin to explore a resource.</p>
+
+        <div class="map-layout">
+
+            <div id="map"></div>
+
+            <div class="resource-list">
+
+                <h3>Example Resources</h3>
+
+                <div class="resource-card">
+                    <h4>Food Support</h4>
+                    <p>Example food resource in Missoula.</p>
+                    <p>Location: Missoula, MT</p>
+                </div>
+
+                <div class="resource-card">
+                    <h4>Housing Support</h4>
+                    <p>Example housing resource in Missoula.</p>
+                    <p>Location: Missoula, MT</p>
+                </div>
+
+                <div class="resource-card">
+                    <h4>Healthcare</h4>
+                    <p>Example healthcare resource in Missoula.</p>
+                    <p>Location: Missoula, MT</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<section class="featured-organizations">
+
+    <h2>Featured Organizations</h2>
+
+    <p>Explore community organizations and services in Missoula.</p>
+
+    <div class="featured-grid">
+
+        <article class="featured-card">
+            <h3>Organization Name</h3>
+            <p>Brief description of services offered.</p>
+            <p><strong>Services:</strong> Food, basic needs</p>
+            <a href="#">Learn More</a>
+        </article>
+
+        <article class="featured-card">
+            <h3>Organization Name</h3>
+            <p>Brief description of services offered.</p>
+            <p><strong>Services:</strong> Housing, shelter</p>
+            <a href="#">Learn More</a>
+        </article>
+
+        <article class="featured-card">
+            <h3>Organization Name</h3>
+            <p>Brief description of services offered.</p>
+            <p><strong>Services:</strong> Healthcare, wellness</p>
+            <a href="#">Learn More</a>
+        </article>
+
+    </div>
+
 </section>
 
 
-        <section class="page-intro">
-            <h2>Explore Local Resources</h2>
-            <p>
-              Discover organizations and services in the community.
-            </p>
-        </section>
+</main>
 
-        <section>
-            <h2>Resource Categories</h2>
+<footer>
 
-            <ul>
-                <li>Housing and Shelter</li>
-                <li>Food and Basic Needs</li>
-                <li>Healthcare and Wellness</li>
-                <li>Employment and Education</li>
-                <li>Family and Childcare</li>
-                <li>Transportation</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Map</h2>
-            <div class="map-placeholder">
-                <p>Interactive map will go here.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Featured Organizations</h2>
-
-            <article>
-                <h3>Organization Name</h3>
-                <p>Brief description of the services offered.</p>
-                <p>Location: Organization address</p>
-                <p>Phone: Organization phone number</p>
-                <a href="#">Visit Organization Website</a>
-            </article>
-
-            <article>
-                <h3>Organization Name</h3>
-                <p>Brief description of the services offered.</p>
-                <p>Location: Organization address</p>
-                <p>Phone: Organization phone number</p>
-                <a href="#">Visit Organization Website</a>
-            </article>
-
-        </section>
-
-    </main>
-
-    <footer>
-            <div class="footer-branding">
-
-        <img src="images/WayFinder_Logo2.2.png"
-             alt="Wayfinder logo">
-
+    <div class="footer-branding">
+        <img src="images/WayFinder_Logo2.2.png" alt="Wayfinder logo">
         <p>Connecting people with community resources and support.</p>
-
-          </div>
+    </div>
 
     <div class="footer-navigation">
         <a href="index.html">Home</a>
@@ -110,7 +135,60 @@
 
     <p class="copyright">&copy; 2026 Wayfinder</p>
 
-    </footer>
+</footer>
+
+<!-- Leaflet Map JavaScript -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+// Create map centered on Missoula
+var map = L.map('map').setView([46.8721, -113.9940], 13);
+
+// Add OpenStreetMap background
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// Example resource pins
+var resources = [
+    {
+        name: "Example Food Resource",
+        lat: 46.8721,
+        lng: -113.9940,
+        category: "Food",
+        info: "Example food assistance resource."
+    },
+    {
+        name: "Example Housing Resource",
+        lat: 46.8790,
+        lng: -113.9800,
+        category: "Housing",
+        info: "Example housing assistance resource."
+    },
+    {
+        name: "Example Healthcare Resource",
+        lat: 46.8600,
+        lng: -114.0000,
+        category: "Healthcare",
+        info: "Example healthcare resource."
+    }
+];
+
+// Add pins to map
+resources.forEach(function(resource) {
+
+    L.marker([resource.lat, resource.lng])
+        .addTo(map)
+        .bindPopup(
+            "<h3>" + resource.name + "</h3>" +
+            "<p><strong>Category:</strong> " + resource.category + "</p>" +
+            "<p>" + resource.info + "</p>"
+        );
+
+});
+
+</script>
 
 </body>
 </html>
