@@ -571,3 +571,11 @@ a {
 .featured-card a:hover {
     background-color: #C9826C;
 }
+
+@media (max-width: 600px) {
+  /* Styles for mobile screens */
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Styles for tablets */
+}
