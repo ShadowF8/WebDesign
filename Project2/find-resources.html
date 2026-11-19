@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Resources | WayFinder</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+
+<header>
+
+    <!-- SITE BRANDING -->
+    <div class="site-branding">
+
+        <a href="index.html">
+            <img src="images/WayFinder_Logo.png"
+                 alt="Wayfinder logo">
+        </a>
+
+        <p>Community Resources & Connections</p>
+
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="find-resources.html">Find Resources</a>
+        <a href="resource-map.html">Resource Map</a>
+        <a href="about-contact.html">About & Contact</a>
+    </nav>
+
+</header>
+
+    <main>
+
+<section class="hero-image">
+</section>
+
+
+        <section class="page-intro">
+            <h2>How can we help?</h2>
+            <p>
+                Answer a few questions to help us connect you
+                with resources that may fit your needs.
+            </p>
+        </section>
+
+        <form action="resource-map.html" method="get" class="resource-form">
+
+    <fieldset>
+        <legend>01 — What are you looking for?</legend>
+        <p class="form-description">Select all that apply.</p>
+
+        <div class="checkbox-grid">
+            <label><input type="checkbox" name="support" value="housing"> Housing & Shelter</label>
+            <label><input type="checkbox" name="support" value="food"> Food & Basic Needs</label>
+            <label><input type="checkbox" name="support" value="healthcare"> Healthcare & Wellness</label>
+            <label><input type="checkbox" name="support" value="employment"> Employment & Education</label>
+            <label><input type="checkbox" name="support" value="family"> Family & Childcare</label>
+            <label><input type="checkbox" name="support" value="transportation"> Transportation</label>
+            <label><input type="checkbox" name="support" value="other"> Other Support</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>02 — Where are you looking?</legend>
+
+        <label for="location">City or community</label>
+        <input type="text" id="location" name="location"
+               placeholder="Enter a city or community">
+    </fieldset>
+
+    <fieldset>
+        <legend>03 — How would you prefer to connect?</legend>
+
+        <div class="checkbox-grid">
+            <label><input type="checkbox" name="contact" value="in-person"> In person</label>
+            <label><input type="checkbox" name="contact" value="phone"> By phone</label>
+            <label><input type="checkbox" name="contact" value="online"> Online</label>
+            <label><input type="checkbox" name="contact" value="any"> Any option</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>04 — Anything else?</legend>
+
+        <label for="details">Additional information (optional)</label>
+        <textarea id="details" name="details"
+                  placeholder="Share anything else that may help..."></textarea>
+    </fieldset>
+
+    <button type="submit" class="form-button">Explore Resources</button>
+
+</form>
+
+        <p>You can also browse all available resources without completing this form.</p>
+        <a href="resource-map.html">Browse All Resources</a>
+
+    </main>
+
+    <footer>
+            <div class="footer-branding">
+
+        <img src="images/WayFinder_Logo2.2.png"
+             alt="Wayfinder logo">
+
+        <p>Connecting people with community resources and support.</p>
+
+          </div>
+
+    <div class="footer-navigation">
+        <a href="index.html">Home</a>
+        <a href="find-resources.html">Find Resources</a>
+        <a href="resource-map.html">Resource Map</a>
+        <a href="about-contact.html">About & Contact</a>
+    </div>
+
+    <p class="copyright">&copy; 2026 Wayfinder</p>
+
+    </footer>
+
+</body>
+</html>
