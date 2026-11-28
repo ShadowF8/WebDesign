@@ -98,6 +98,47 @@ textarea {
     font-size: 0.9rem;
 }
 
+
+/* CONTACT FORM */
+
+.resource-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #45483D;
+    font-weight: 600;
+}
+
+.resource-form input[type="text"],
+.resource-form input[type="email"],
+.resource-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px;
+    margin-bottom: 20px;
+
+    border: 1px solid #A9B8A1;
+    border-radius: 12px;
+
+    background-color: #FFFFFF;
+    color: #45483D;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.resource-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.resource-form input:focus,
+.resource-form textarea:focus {
+    outline: 2px solid #45483D;
+    outline-offset: 2px;
+}
+
+
 /* CHECKBOX GRID */
 
 .checkbox-grid {
